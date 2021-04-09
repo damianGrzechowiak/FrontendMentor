@@ -1,0 +1,145 @@
+/* @media(max-width 380px){ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image: url(/images/bg-pattern-top.svg);
+    background-position:  right 10%;
+    background-size:100%;
+    background-repeat: no-repeat; */
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    left: -220vw;
+    top: -90vh;
+    width: 20%;
+    height: 20%;
+    /* background-position: left; */
+}
+.circle2 {
+    position: absolute;
+    top: 50vh;
+    left: 30vw;
+}
+    section {
+        
+        position: relative;
+        display: block;
+        /* grid-template-rows: 1fr 2fr 0.5fr; */
+        
+        margin: 20vh auto;
+        /* border: 2px solid black; */
+        background-color: white;
+        height: 66vh;
+        width: 90vw;
+        border-radius: 20px;
+        border-radius: 20px;
+        /* overflow: hidden; */
+        /* border-radius: 14px; */
+        /* display: none; */
+
+    }
+    section .up {
+        position: absolute;
+        background-image: url(/images/bg-pattern-card.svg);
+        width: 100%;
+        height: 40%;
+        /* overflow: hidden; */
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+    section .img {
+        position: absolute;
+        text-align: center;
+        top:26%;
+        left: 0;
+        right: 0;
+        
+        margin: auto;
+    }
+    section .img img {
+        border: 6px solid white;
+        border-radius: 50%;
+    }
+    section .name{
+        text-align: center;
+       
+        position: absolute;
+        top: 60%;
+        /* background-color: bisque; */
+        height: 18px;
+        width: 100%;
+        
+    }
+    section .name h2, p {
+    display: inline-block;
+    
+    font-size: 18px;
+    }
+    section .name h2{
+        
+    }
+    section .name p {
+        margin-left: 2%;
+        text-align: left;
+    }
+    section .city {
+        display: inline-block;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    section .stats {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 4%;
+        z-index: 1;
+        border-top: 2px solid hsl(0, 0%, 59%);
+        padding-top: 8%;
+    }
+    
+    section .stats div {
+    justify-content: space-between;
+    
+    
+    
+    text-align: center;
+    }
+    section .stats div p {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    @media (min-width: 375px){
+        section {
+            width: 30%;
+            box-shadow: 10px 5px 10px hsl(185, 75%, 39%);
+        }
+        .circle {
+            position: absolute;
+            /* left: -220vw; */
+            /* top: -90vh; */
+            left: -26%;
+            top: -60%;
+            width: 20%;
+            height: 20%;
+            
+        }
+        .circle2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
